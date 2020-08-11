@@ -100,7 +100,7 @@ def main():
     proxies = []
 
     if (ret == "Y" or ret == "y"):
-        ret = ask_question("Would you like to collect your proxies from the internet? [E/H]")
+        ret = ask_question("Would you like to collect your proxies from the internet? [Y/N]")
 
         if (ret == "Y" or ret == "y"):
             print_status("Gathering proxy from the Internet! This may take a while.\n")
