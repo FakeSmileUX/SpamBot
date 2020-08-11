@@ -1,6 +1,8 @@
+from libs.check_modules import check_modules
 from sys import exit
 from os import _exit
 
+check_modules()
 
 from os import path
 
