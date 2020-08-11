@@ -1,3 +1,6 @@
+# coding=utf-8
+#!/usr/bin/env python3
+
 from libs.check_modules import check_modules
 from sys import exit
 from os import _exit
@@ -20,6 +23,7 @@ from multiprocessing import Process
 from colorama import Fore, Back, Style
 
 def chunks(lst, n):
+    """Yield successive n-sized chunks from lst."""
     for i in range(0, len(lst), n):
         yield lst[i:i + n]
 
@@ -55,7 +59,7 @@ def video_attack(proxies):
     chunk = list(chunks(proxies, 10))
 
     print("")
-    print_status("Video report attack is starting...\n")
+    print_status("Video report attack is starting!\n")
 
     i = 1
     for proxy_list in chunk:
@@ -78,7 +82,7 @@ def profile_attack(proxies):
     chunk = list(chunks(proxies, 10))
 
     print("")
-    print_status("Account report attack is starting...\n")
+    print_status("Account report attack is starting!\n")
 
     i = 1
     for proxy_list in chunk:
@@ -89,14 +93,14 @@ def profile_attack(proxies):
         i = i + 1
 
 def main():
-    print_success("Modules are done!\n")
+    print_success("Modules done!\n")
 
-    ret = ask_question("Do you want to use proxy? [Y/N]")
+    ret = ask_question("Would you like to use proxy? [Y/N]")
 
     proxies = []
 
     if (ret == "Y" or ret == "y"):
-        ret = ask_question("Would you like to collect your proxies from the internet? [Y/N]")
+        ret = ask_question("Would you like to collect your proxies from the internet? [E/H]")
 
         if (ret == "Y" or ret == "y"):
             print_status("Gathering proxy from the Internet! This may take a while.\n")
