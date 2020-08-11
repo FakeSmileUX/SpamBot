@@ -177,7 +177,7 @@ def report_profile_attack(username, proxy):
         print_error("Connection error has occurred! (STATUS CODE:", res.status_code, ")")
         return
     
-    print_success("Başarıyla şikayet edildi!")
+    print_success("Reported!")
 
 def report_video_attack(video_url, proxy):
     ses = Session()
@@ -313,7 +313,7 @@ def report_video_attack(video_url, proxy):
         print_error("Connection error has occurred! (STATUS CODE:", res.status_code, ")")
         return
     
-    print_success("Başarıyla şikayet edildi!")
+    print_success("Reported!")
 
 
 
