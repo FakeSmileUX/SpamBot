@@ -27,6 +27,13 @@ def check_modules():
         sys.exit(0)
 
     try:
+        import proxybroker
+    except:
+        print("[-] 'proxybroker' package not installed!")
+        print("[*] For install 'pip install proxybroker' !")
+        sys.exit(0)
+
+    try:
         import warnings
     except:
         print("[-] 'warnings' package not installed!")
