@@ -1,11 +1,8 @@
-pkg update
-pkg upgrade
-pkg install git
-pkg install python-pip
-pkg install python
-pkg install python3
-pkg install python3-pip
-pkg install tor
+apt install python-pip
+apt install python
+apt install python3
+apt install python3-pip
+apt install tor
 pip install requests
 pip install colorama
 pip install asyncio
