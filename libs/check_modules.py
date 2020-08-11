@@ -26,12 +26,6 @@ def check_modules():
         print("[*] For install 'pip install asyncio' !")
         sys.exit(0)
 
-    try:
-        import proxybroker
-    except:
-        print("[-] 'proxybroker' package not installed!")
-        print("[*] For install 'pip install proxybroker' !")
-        sys.exit(0)
 
     try:
         import warnings
