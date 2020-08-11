@@ -114,7 +114,7 @@ def main():
             exit()
 
         print_success(str(len(proxies)) + " proxy found!\n")
-    elif (ret == "H" or ret == "h"):
+    elif (ret == "N" or ret == "n"):
         pass
     else:
         print_error("Answer not understood, quiting!")
